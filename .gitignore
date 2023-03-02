@@ -1,0 +1,9 @@
+# modules and run
+node_modules
+run
+
+# IDE
+.vscode
+*.local
+.idea
+.DS_Store
