@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
+    "module": "CommonJS",
     "jsx": "react-jsx",
     "declaration": true,
     "removeComments": true,
