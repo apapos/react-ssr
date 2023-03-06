@@ -7,7 +7,7 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
-    "target": "es2017",
+    "target": "ES6",
     "sourceMap": true,
     "outDir": "./run",
     "baseUrl": "./",
@@ -22,10 +22,10 @@
       "@atom/*": [
         "atom/*"
       ],
-      "@web/*": [
-        "web/*"
+      "@client/*": [
+        "client/*"
       ]
-    }
+    },
   },
   "exclude": [
     "node_modules",

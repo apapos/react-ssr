@@ -1,15 +1,19 @@
-import { Controller, Get, Res, Header } from '@nestjs/common';
+import { Controller, Get, Req } from '@nestjs/common';
 import { AppService } from '@atom/app/service';
-import { Response } from 'express'
-
+import { Request } from 'express'
 @Controller()
 export class AppController {
-  constructor(private readonly appService: AppService) { }
+  constructor(private readonly appService: AppService) {
 
-  @Get()
-  @Header('content-type', 'text/html')
-  getHello(@Res() res: Response) {
-    return this.appService.getHello(res);
+  }
+  @Get('/')
+  getHome(@Req() req: Request) {
+    return this.appService.getPage(req);
+  }
+
+  @Get(new AppService().getClientRoutePaths())
+  getPage(@Req() req: Request) {
+    return this.appService.getPage(req);
   }
 
   @Get('/name')
