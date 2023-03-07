@@ -6,6 +6,7 @@ const Layout = (props: PropsWithChildren) => {
             <div className="header">
                 <Link to={'/'}>Home</Link>
                 <Link to={'/about'}>About</Link>
+                <Link to={'/person'}>Person</Link>
             </div>
             <div className="content">
                 {props.children}

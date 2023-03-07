@@ -30,7 +30,9 @@
   "include": [
     "atom/**/*",
     "client/**/*",
-    "**/*.ts"
+    "**/*.ts",
+    "webpack.config.js",
+    "webpack.config.js"
   ],
   "exclude": [
     "node_modules",

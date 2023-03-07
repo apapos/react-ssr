@@ -1,8 +1,6 @@
-const About=()=>{
+const About = () => {
     return (
-        <>
-            about
-        </>
+        <div>about</div>
     )
 }
 export default About
