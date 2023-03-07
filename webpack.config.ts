@@ -1,7 +1,9 @@
-const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+import * as path from 'path';
+import HtmlWebpackPlugin from 'html-webpack-plugin'
+import { Configuration } from 'webpack';
+import 'webpack-dev-server';
 
-module.exports = {
+const config: Configuration = {
     entry: "./client/entry-client.tsx",
     target: "web",
     mode: "development",
@@ -40,3 +42,4 @@ module.exports = {
         }),
     ],
 }
+export default config

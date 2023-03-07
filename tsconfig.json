@@ -7,7 +7,8 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
-    "target": "ES2019",
+    "esModuleInterop": true,
+    "target": "ES5",
     "sourceMap": true,
     "outDir": "./run",
     "baseUrl": "./",
@@ -31,12 +32,10 @@
     "atom/**/*",
     "client/**/*",
     "**/*.ts",
-    "webpack.config.js",
-    "webpack.config.js"
   ],
   "exclude": [
     "node_modules",
     "run",
     "**/*spec.ts"
-  ]
+  ],
 }
