@@ -1,13 +1,13 @@
 {
   "compilerOptions": {
-    "module": "CommonJS",
+    "module": "commonjs",
     "jsx": "react-jsx",
     "declaration": true,
     "removeComments": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
-    "target": "ES6",
+    "target": "ES2019",
     "sourceMap": true,
     "outDir": "./run",
     "baseUrl": "./",
@@ -27,6 +27,11 @@
       ]
     },
   },
+  "include": [
+    "atom/**/*",
+    "client/**/*",
+    "**/*.ts"
+  ],
   "exclude": [
     "node_modules",
     "run",

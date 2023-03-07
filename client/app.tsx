@@ -1,27 +1,13 @@
-import { Route, Routes } from "react-router-dom";
-import routes from './routes'
 import Layout from "./component/layout";
 
 export default function App() {
+  const handleClick = () => {
+    console.log('客户端点击事件执行。。。');
+
+  }
   return (
-    <html>
-      <head>
-        <title>Server Rendered App</title>
-      </head>
-      <body>
-        <Layout>
-          <Routes>
-            {
-              routes.map((route, keyIdx) => {
-                return (
-                  <Route key={keyIdx} path={route.path} element={route.element} />
-                )
-              })
-            }
-          </Routes>
-        </Layout>
-        <script src="./entry.js" />
-      </body>
-    </html>
+    <Layout>
+      <button onClick={handleClick}>客户端Button</button>
+    </Layout>
   );
 }

@@ -4,7 +4,7 @@ import { AppService } from '@atom/app/service';
 import { LoggerMiddleware } from '@atom/middleware';
 import { HomeModule } from '@atom/modules';
 @Module({
-  imports: [HomeModule,],
+  imports: [HomeModule],
   controllers: [AppController],
   providers: [AppService],
 })
