@@ -1,6 +1,7 @@
 # modules and run
 node_modules
 run
+build
 
 # IDE
 .vscode
