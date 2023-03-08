@@ -1,11 +1,11 @@
 const Home = () => {
     const handleClick = () => {
-        console.log('home button click');
+        console.log('person button click');
     }
     return (
         <>
-            <div>home</div>
-            <button onClick={handleClick}>HomeButton</button>
+            <div>person</div>
+            <button onClick={handleClick}>PersonButton</button>
         </>
     )
 }

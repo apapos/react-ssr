@@ -9,7 +9,7 @@ export default function App() {
   return (
     <Suspense fallback={<div>Loading...</div>}>
       <Layout>
-        <button onClick={handleClick}>客户端Button</button>
+        <button onClick={handleClick}>Layout-Button</button>
         <Routes>
           {
             route.map((el, idx) => {
